@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Places</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel the world</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="hero">
+            <h2><strong>Explore Beautiful Destinations</strong></h2>
+            <p>Discover amazing tourist places around the world.
+                Travelling is an amazing way to learn a lot of things in life.
+                <br> A lot of people around the world travel every year to many places.<br>
+                 Moreover, it is important to travel to humans.<br>
+                  Some travel to learn more while some travel to take a break from their life. <br>
+                  No matter the reason, travelling opens a big door for us to explore the world<br>
+                   beyond our imagination and indulge in many things. 
+            </p>
+            <p><h2><strong>Why Do We Travel?</strong></h2><br>
+                There are a lot of reasons to travel. <br>
+                Some people travel for fun while some do it for education purposes.<br>
+                Similarly, others have business reasons to travel.<br>
+                 In order to travel, one must first get an idea of their financial situation and then proceed.<br>
+                
+                Understanding your own reality helps people make good travel decisions. <br>
+                If people gave enough opportunities to travel, they set out on the journey.<br>
+                 People going on educational tours get a first-hand experience of everything they’ve read in the text.<br>
+                
+                Similarly, people who travel for fun get to experience and indulge in refreshing things which may serve as a stress reducer in their lives.<br>
+                 The culture, architecture, cuisine <br>and more of the place can open our mind to new things.</p>
+                 <p><h2><strong>The Benefits of Travelling</strong></h2>
+                    There are numerous benefits to travelling if we think about it.<br>
+                     The first one being, we get to meet new people.<br>
+                      When you meet new people, you get the opportunity to make new friends. <br>
+                      It may be a fellow traveller or the local you asked for directions.<br>
+                    
+                    Moreover, new age technology has made it easier to keep in touch with them.<br>
+                     Thus, it offers not only a great way to understand human nature but also explore new places with those friends to make your trip easy.<br>
+                                         
+                    Similar to this benefit, travelling makes it easier to understand people.<br>
+                     You will learn how other people eat, speak, live and more. When you get out of your comfort zone,<br>
+                      you will become more sensitive towards other cultures and the people.<br>
+                    
+                    Another important factor which we learn when we travel is learning new skills.<br>
+                     When you go to hilly areas, you will most likely trek and thus, trekking will be a new skill added to your list.<br>
+                    
+                    Similarly, scuba diving or more can also be learned while travelling.<br>
+                    A very important thing which travelling teaches us is to enjoy nature.<br> It helps us appreciate the true beauty of the earth.</p>
+        </section>
+        <section id="places" class="places">
+            <h2>Popular Tourist Places</h2>
+            <div class="place" onclick="showDetails('paris')">
+                <input type="image" src="C:\Users\neelg\OneDrive\Desktop\taj.jpg" name="image" width="300" height="300"><br>
+                <h3>DELHI</h3>
+            </div>
+            <div class="place" onclick="showDetails('newyork')">
+                <img src="C:\Users\neelg\OneDrive\Desktop\varnasi.jpg" alt="Varnasi" width="300" height="300">
+                <h3>Varnasi</h3>
+            </div>
+            <div class="place" onclick="showDetails('tokyo')">
+                <img src="file:///C:/Users/neelg/OneDrive/Desktop/wayanad.webp" alt="wayanad" width="300" height="300">
+                <h3>wayanad</h3>
+            </div>
+            <h1>Contact Support</h1>
+            <form action="contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDetails()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tourist Places</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
